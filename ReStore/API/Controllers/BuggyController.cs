@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    public class BuggyContoller : BaseApiController
+    public class BuggyController : BaseApiController
     {
         [HttpGet("not-found")]
         public ActionResult GetNotFound() 

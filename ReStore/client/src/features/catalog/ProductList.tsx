@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material";
-import { Product } from "../../app/modules/product";
+import { Product } from "../../app/models/product";
 import ProductCard from "./ProductCard";
 import { useAppSelector } from "../../app/store/configureStore";
 import ProductCardSkeleton from "./ProductCardSkeleton";

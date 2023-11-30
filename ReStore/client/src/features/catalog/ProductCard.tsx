@@ -8,7 +8,7 @@ import {
   CardHeader,
   Avatar,
 } from "@mui/material";
-import { Product } from "../../app/modules/product";
+import { Product } from "../../app/models/product";
 import { Link } from "react-router-dom";
 import { LoadingButton } from "@mui/lab";
 import { currencyFormat } from "../../app/util/util";
@@ -55,7 +55,7 @@ export default function ProductCard({ product }: Props) {
       </CardContent>
       <CardActions>
         <LoadingButton
-          loading={status.includes("pendingAddItem" + product.id)}
+          loading={status === "pendingAddItem" + product.id}
           onClick={() =>
             dispatch(addBasketItemAsync({ productId: product.id }))
           }

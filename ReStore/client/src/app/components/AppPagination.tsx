@@ -1,5 +1,5 @@
 import { Box, Typography, Pagination } from "@mui/material";
-import { MetaData } from "../modules/pagination";
+import { MetaData } from "../models/pagination";
 
 interface Props {
   metaData: MetaData;

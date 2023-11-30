@@ -3,10 +3,10 @@ import {
   createEntityAdapter,
   createSlice,
 } from "@reduxjs/toolkit";
-import { Product, ProductParams } from "../../app/modules/product";
+import { Product, ProductParams } from "../../app/models/product";
 import agent from "../../app/api/agent";
 import { RootState } from "../../app/store/configureStore";
-import { MetaData } from "../../app/modules/pagination";
+import { MetaData } from "../../app/models/pagination";
 
 interface CatalogState {
   productsLoaded: boolean;

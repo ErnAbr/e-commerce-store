@@ -20,6 +20,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context: "{{defaultContext}}:API"
+          context: ./API
           push: true
           tags: ernabr/restore:latest

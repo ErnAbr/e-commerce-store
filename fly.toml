@@ -7,7 +7,7 @@ app = "restore-ernabr-3"
 primary_region = "ams"
 
 [build]
-  dockerfile = "API/Dockerfile" 
+  image = "ernabr/restore:latest" 
 
 [env]
   ASPNETCORE_URLS = "http://+:8080"

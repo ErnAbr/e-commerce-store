@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: "{{defaultContext}}:API"
-          file: ./API/Dockerfile
+          file: Dockerfile
           push: true
           tags: ernabr/restore:latest
   deploy:
